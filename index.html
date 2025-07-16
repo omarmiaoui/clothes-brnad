@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chic Threads - Modern Apparel</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .btn-primary {
+            @apply bg-indigo-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg overflow-hidden transition duration-300 ease-in-out transform hover:scale-102;
+        }
+        .icon {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            stroke-width: 2;
+            stroke: currentColor;
+            fill: none;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm py-4">
+        <div class="container flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold text-indigo-700">Chic Threads</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-200">Home</a>
+                <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-200">Shop</a>
+                <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-200">About</a>
+                <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition duration-200">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="text-gray-700 hover:text-indigo-600">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-700 hover:text-indigo-600">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-700 hover:text-indigo-600">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="9" cy="21" r="1"></circle>
+                        <circle cx="20" cy="21" r="1"></circle>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                    </svg>
+                </a>
+                <button class="md:hidden text-gray-700 hover:text-indigo-600">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white py-20 px-4 rounded-b-3xl shadow-lg">
+        <div class="container text-center">
+            <h1 class="text-5xl font-extrabold mb-4 leading-tight">Discover Your Style</h1>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Explore our latest collection of trendy and comfortable apparel designed for every occasion.
+            </p>
+            <button class="btn-primary">Shop New Arrivals</button>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-16 px-4">
+        <div class="container">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gray-800">Shop by Category</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card">
+                    <img src="https://placehold.co/600x400/9333ea/ffffff?text=Men's+Wear" alt="Men's Wear" class="w-full h-64 object-cover rounded-t-xl">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Men's Collection</h3>
+                        <p class="text-gray-600 mb-4">Stylish and comfortable clothing for men.</p>
+                        <a href="men.html" class="btn-primary inline-block">Explore Men</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Women's+Wear" alt="Women's Wear" class="w-full h-64 object-cover rounded-t-xl">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Women's Collection</h3>
+                        <p class="text-gray-600 mb-4">Trendy and elegant outfits for women.</p>
+                        <a href="women.html" class="btn-primary inline-block">Explore Women</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://placehold.co/600x400/10b981/ffffff?text=Accessories" alt="Accessories" class="w-full h-64 object-cover rounded-t-xl">
+                    <div class="p-6 text-center">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Accessories</h3>
+                        <p class="text-gray-600 mb-4">Complete your look with our unique accessories.</p>
+                        <button class="btn-primary">Explore Accessories</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="bg-white py-16 px-4 rounded-t-3xl shadow-lg">
+        <div class="container flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2">
+                <img src="https://placehold.co/600x400/facc15/333333?text=About+Us" alt="About Us" class="w-full rounded-xl shadow-lg">
+            </div>
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-4xl font-bold mb-6 text-gray-800">Our Story</h2>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    Chic Threads was founded with a passion for fashion and a commitment to quality. We believe that clothing should not only look good but also feel great. Our designs are inspired by global trends and crafted with the finest materials to ensure comfort and durability.
+                </p>
+                <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                    We strive to create a unique shopping experience, offering a diverse range of styles that cater to individual tastes. Join us on our journey to redefine modern apparel.
+                </p>
+                <button class="btn-primary">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fashion Trend Explainer Section -->
+    <section class="bg-gray-100 py-16 px-4 rounded-b-3xl shadow-lg">
+        <div class="container text-center">
+            <h2 class="text-4xl font-bold mb-6 text-gray-800">✨ Fashion Trend Explainer ✨</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Want to know more about a specific fashion trend? Type it in below and let our AI explain it!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+                <input type="text" id="trendInput" placeholder="e.g., 'Boho Chic' or 'Minimalism'" class="p-4 rounded-lg w-full sm:w-96 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-300">
+                <button id="explainTrendBtn" class="btn-primary bg-indigo-700 text-white hover:bg-indigo-800">Explain Trend</button>
+            </div>
+            <div id="trendExplanation" class="bg-white p-6 rounded-xl shadow-md text-left text-gray-700 min-h-[100px] flex items-center justify-center">
+                <p class="text-gray-500">Your fashion trend explanation will appear here.</p>
+            </div>
+            <div id="loadingIndicator" class="hidden mt-4 text-indigo-600 font-semibold">
+                Loading...
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-indigo-700 text-white py-16 px-4 text-center rounded-b-3xl shadow-lg">
+        <div class="container">
+            <h2 class="text-4xl font-bold mb-4">Stay Updated!</h2>
+            <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+                Sign up for our newsletter to get the latest updates on new arrivals, exclusive offers, and fashion tips.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <input type="email" placeholder="Enter your email" class="p-4 rounded-lg w-full sm:w-80 text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-300">
+                <button class="btn-primary bg-white text-indigo-700 hover:bg-gray-100">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10 px-4 mt-8 rounded-t-3xl">
+        <div class="container grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div>
+                <h3 class="text-2xl font-bold mb-4 text-indigo-400">Chic Threads</h3>
+                <p class="text-gray-400 leading-relaxed">
+                    Fashion that speaks volumes. Quality that lasts.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-indigo-400">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-200">Shop All</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-200">FAQs</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-200">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition duration-200">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-4 text-indigo-400">Contact Us</h3>
+                <p class="text-gray-400">123 Fashion Ave, Style City, ST 12345</p>
+                <p class="text-gray-400">Email: info@chicthreads.com</p>
+                <p class="text-gray-400">Phone: (123) 456-7890</p>
+                <div class="flex justify-center md:justify-start space-x-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-200">
+                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.4 3 4l-1 1.4c2.2 2.6 5.6 4.1 9 4.1 9 0 10-8 10-8z"></path>
+                    </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-gray-500 mt-8">
+            &copy; 2025 Chic Threads. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const trendInput = document.getElementById('trendInput');
+            const explainTrendBtn = document.getElementById('explainTrendBtn');
+            const trendExplanation = document.getElementById('trendExplanation');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+
+            explainTrendBtn.addEventListener('click', async () => {
+                const trend = trendInput.value.trim();
+                if (!trend) {
+                    trendExplanation.innerHTML = '<p class="text-red-500">Please enter a fashion trend to explain.</p>';
+                    return;
+                }
+
+                trendExplanation.innerHTML = '<p class="text-gray-500">Generating explanation...</p>';
+                loadingIndicator.classList.remove('hidden');
+
+                try {
+                    let chatHistory = [];
+                    chatHistory.push({ role: "user", parts: [{ text: `Explain the fashion trend: ${trend}. Keep the explanation concise and suitable for a fashion brand website.` }] });
+                    const payload = { contents: chatHistory };
+                    const apiKey = ""; // Leave as empty string for Canvas
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        trendExplanation.innerHTML = `<p>${text}</p>`;
+                    } else {
+                        trendExplanation.innerHTML = '<p class="text-red-500">Could not generate an explanation. Please try again.</p>';
+                        console.error('Gemini API response error:', result);
+                    }
+                } catch (error) {
+                    trendExplanation.innerHTML = '<p class="text-red-500">An error occurred while fetching the explanation.</p>';
+                    console.error('Fetch error:', error);
+                } finally {
+                    loadingIndicator.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
